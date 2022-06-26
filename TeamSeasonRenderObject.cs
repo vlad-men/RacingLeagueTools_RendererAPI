@@ -7,6 +7,7 @@
     public List<DriverSessionRenderObject> MajorQuals { get; set; }
     public int PositionPrev { get; set; }
     public int Position { get; set; }
+    public string PositionString { get; set; }
     public int PositionJump { get; set; }
     public string Points { get; set; }
     public int CountP1 { get; set; }
@@ -25,7 +26,7 @@
     public int RaceFastestLapCount { get; set; }
     public int RaceDriverDayCount { get; set; }
     public int RaceBestMomentCount { get; set; }
-    public int QualisWinCount { get; set; }
+    public int CountQualP1 { get; set; }
     public int BestPosQual { get; set; }
     public int PenaltyPoints { get; set; }
 }

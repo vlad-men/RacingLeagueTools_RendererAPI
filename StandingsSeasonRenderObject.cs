@@ -6,4 +6,7 @@
     public int SeasonProgressPercent { get; set; }
     public DriverRenderObject DriverSeasonLeader { get; set; }
     public TeamRenderObject TeamSeasonLeader { get; set; }
+    public List<EventRenderObject> Events { get; set; }
+    public bool IsPositionJumpForDriversExists { get; set; }
+    public bool IsPositionJumpForTeamsExists { get; set; }
 }

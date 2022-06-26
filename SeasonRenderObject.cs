@@ -5,6 +5,7 @@
     public CompletedStatus CompletedStatus { get; set; }
     public ChampionshipRenderObject Championship { get; set; }
     public LeagueCategoryRenderObject LeagueCategory { get; set; }
+    public LineupsBasedType LineupsBasedType { get; set; }
     public int GridSize { get; set; }
     public bool IsSeparateReservesAtStandings { get; set; }
     public bool IsShowTimesInsteadGapInQual { get; set; }

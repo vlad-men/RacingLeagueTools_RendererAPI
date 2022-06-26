@@ -17,6 +17,15 @@
     public int FastestLapTimeMs { get; set; }
     public TyresType? FastestLapTyres { get; set; }
     public int FastestLapNumLap { get; set; }
+    public int FastestLapSector1Ms { get; set; }
+    public int FastestLapSector2Ms { get; set; }
+    public int FastestLapSector3Ms { get; set; }
+    public string FastestLapSector1 { get; set; }
+    public string FastestLapSector2 { get; set; }
+    public string FastestLapSector3 { get; set; }
+    public bool IsOverallFastestSector1 { get; set; }
+    public bool IsOverallFastestSector2 { get; set; }
+    public bool IsOverallFastestSector3 { get; set; }
     public bool IsFinished { get; set; }
     public bool IsRaceFastestLap { get; set; }
     public bool IsRaceDriverOfDay { get; set; }
@@ -39,6 +48,4 @@
     public int PositionJump { get; set; }
     public int PitsCount { get; set; }
     public List<TyresStint> Stints { get; set; } 
-
-
 }
