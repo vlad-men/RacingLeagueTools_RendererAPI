@@ -29,7 +29,7 @@
     public int RaceFastestLapCount { get; set; }
     public int RaceDriverDayCount { get; set; }
     public int RaceBestMomentCount { get; set; }
-    public int QualisWinCount { get; set; }
+    public int CountQualP1 { get; set; }
     public int BestPosQual { get; set; }
     public int PenaltyPoints { get; set; }
 }
