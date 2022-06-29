@@ -5,6 +5,8 @@
     public List<DriverSessionRenderObject> Quals { get; set; }
     public List<DriverSessionRenderObject> MajorRaces { get; set; }
     public List<DriverSessionRenderObject> MajorQuals { get; set; }
+    public DriverSessionRenderObject MajorRace {get; set; }
+    public DriverSessionRenderObject MajorQual { get; set; }
     public int Points { get; set; }
     public string PointsString { get; set; }
     public List<int> RacesClassificationPosition { get; set; }

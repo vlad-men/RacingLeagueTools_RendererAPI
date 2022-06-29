@@ -2,6 +2,7 @@
 {
     public int Position { get; set; }
     public string PositionString { get; set; }
+    public string PositionIncludeStatus { get; set; }
     public int ClassificationPosition { get; set; }
     public DriverRenderObject Driver { get; set; }
     public TeamRenderObject Team { get; set; }
