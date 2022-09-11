@@ -16,7 +16,7 @@
     public int CountP1 { get; set; }
     public int CountP2 { get; set; }
     public int CountP3 { get; set; }
-    public int BestPos { get; set; }
+    public string BestPos { get; set; }
     public int BestPos1 { get; set; }
     public int BestPos2 { get; set; }
     public int BestPos3 { get; set; }
@@ -32,4 +32,10 @@
     public int CountQualP1 { get; set; }
     public int BestPosQual { get; set; }
     public int PenaltyPoints { get; set; }
+    public int CountDnf { get; set; }
+    public int CountDns { get; set; }
+    public int CountNotClassified { get; set; }
+    public int CountTop3 { get; set; }
+    public int CountTop5 { get; set; }
+    public int CountTop10 { get; set; }
 }

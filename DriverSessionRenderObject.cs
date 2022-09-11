@@ -27,6 +27,12 @@
     public bool IsOverallFastestSector1 { get; set; }
     public bool IsOverallFastestSector2 { get; set; }
     public bool IsOverallFastestSector3 { get; set; }
+    public string QualQ1Time { get; set; }
+    public string QualQ2Time { get; set; }
+    public string QualQ3Time { get; set; }
+    public int QualQ1TimeMs { get; set; }
+    public int QualQ2TimeMs { get; set; }
+    public int QualQ3TimeMs { get; set; }
     public bool IsFinished { get; set; }
     public bool IsRaceFastestLap { get; set; }
     public bool IsRaceDriverOfDay { get; set; }

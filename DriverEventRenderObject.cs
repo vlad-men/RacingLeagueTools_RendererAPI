@@ -33,4 +33,5 @@
     public int PenaltyPosStewards { get; set; }
     public int PenaltyTimeSum { get; set; }
     public int PenaltyPosSum { get; set; }
+    public bool IsWorstEvent { get; set; }
 }

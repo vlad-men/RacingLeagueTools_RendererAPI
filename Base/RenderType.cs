@@ -7,9 +7,9 @@ public enum RenderType
     TeamStandings,
     Lineups,
     LineupsReserve,
-    PureRacePaceRating,
-    ConsistancyRating,
-    RaceTopFastestLaps,
-    RaceLongestStints,
-    Calendar
+    Calendar,
+    DriverSessionStatistics,
+    DriverSeasonStatistics,
+    DriverSession,
+    DriverInfo
 }

@@ -6,4 +6,5 @@
     public NationRenderObject Nation { get; set; }
     public CarRenderObject Car { get; set; }
     public string Badge { get; set; }
+    public int Position { get; set; }
 }
