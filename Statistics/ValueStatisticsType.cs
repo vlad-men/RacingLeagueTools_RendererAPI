@@ -8,5 +8,6 @@ public enum ValueStatisticsType
     Stints,
     Separator,
     Tyres,
-    SecondaryNumber
+    SecondaryNumber,
+    DriverCompact
 }

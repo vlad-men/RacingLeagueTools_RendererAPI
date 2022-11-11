@@ -11,5 +11,8 @@
     public bool IsDriverSet { get; set; }
     public bool IsCarSet { get; set; }
     public SeasonRenderObject Season { get; set; }
+    public bool IsNextTeam { get; set; }
+
     public LineupsBasedType LineupsBasedType { get; set; } 
+
 }

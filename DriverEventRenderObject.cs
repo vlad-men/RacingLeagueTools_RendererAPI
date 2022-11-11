@@ -34,4 +34,6 @@
     public int PenaltyTimeSum { get; set; }
     public int PenaltyPosSum { get; set; }
     public bool IsWorstEvent { get; set; }
+    public bool IsMajorRaceFastestLap { get; set; }
+    public bool IsMajorQualPole { get; set; }
 }

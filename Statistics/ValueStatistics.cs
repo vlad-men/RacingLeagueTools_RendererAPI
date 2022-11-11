@@ -7,5 +7,7 @@ public class ValueStatistics
     public ValueStatisticsType Type { get; set; }
     public int Level { get; set; }
     public IList<TyresStint> Stints { get; set; }
-    public TyresType? Tyres { get; set; } 
+    public TyresType? Tyres { get; set; }
+    public bool IsBig { get; set; }
+    public bool IsSmall { get; set; }
 }

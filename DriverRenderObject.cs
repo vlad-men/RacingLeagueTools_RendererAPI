@@ -13,5 +13,6 @@
     public LeagueRole LeagueRole { get; set; }
     public int RaceNumber { get; set; }
     public NationRenderObject NationalityIngame { get; set; }
-
+    public GamePlatform GamePlatform { get; set; }
+    public string Description { get; set; }
 }

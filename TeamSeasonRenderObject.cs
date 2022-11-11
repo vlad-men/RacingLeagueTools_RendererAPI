@@ -35,4 +35,9 @@
     public int CountTop3 { get; set; }
     public int CountTop5 { get; set; }
     public int CountTop10 { get; set; }
+    public DriverSeasonRenderObject Driver0 => Drivers.Count > 0 ? Drivers[0] : new DriverSeasonRenderObject();
+    public DriverSeasonRenderObject Driver1 => Drivers.Count > 1 ? Drivers[1] : new DriverSeasonRenderObject();
+    public DriverSeasonRenderObject Driver2 => Drivers.Count > 2 ? Drivers[2] : new DriverSeasonRenderObject();
+    public DriverSeasonRenderObject Driver3 => Drivers.Count > 3 ? Drivers[3] : new DriverSeasonRenderObject();
+    public List<DriverSeasonRenderObject> Drivers { get; } = new();
 }

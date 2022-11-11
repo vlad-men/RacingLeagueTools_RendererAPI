@@ -33,6 +33,9 @@
     public int QualQ1TimeMs { get; set; }
     public int QualQ2TimeMs { get; set; }
     public int QualQ3TimeMs { get; set; }
+    public int LapsCountQ1 { get; set; }
+    public int LapsCountQ2 { get; set; }
+    public int LapsCountQ3 { get; set; }
     public bool IsFinished { get; set; }
     public bool IsRaceFastestLap { get; set; }
     public bool IsRaceDriverOfDay { get; set; }
@@ -54,5 +57,11 @@
     public int GridPosition { get; set; }
     public int PositionJump { get; set; }
     public int PitsCount { get; set; }
-    public List<TyresStint> Stints { get; set; } 
+    public List<TyresStint> Stints { get; set; }
+    public int OvertakesCount { get; set; }
+    public int LosePositionsCount { get; set; }
+    public int MaxSpeed { get; set; }
+    public int LeadLaps { get; set; }
+    public int LeadDistance { get; set; }
+    public int RaceDistancePercentage { get; set; }
 }

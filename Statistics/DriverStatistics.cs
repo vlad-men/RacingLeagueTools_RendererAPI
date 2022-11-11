@@ -1,10 +1,5 @@
 public class DriverStatistics
 {
-    public DriverStatistics()
-    {
-        Values = new List<ValueStatistics>();
-    }
-    
     public DriverRenderObject Driver { get; set; }
     public TeamRenderObject Team { get; set; }
     public CarRenderObject Car { get; set; }
@@ -18,6 +13,10 @@ public class DriverStatistics
     public ValueStatistics Value5 => Values.Count > 5 ? Values[5] : new ValueStatistics() { IsEnabled = false };
     public ValueStatistics Value6 => Values.Count > 6 ? Values[6] : new ValueStatistics() { IsEnabled = false };
     public ValueStatistics Value7 => Values.Count > 7 ? Values[7] : new ValueStatistics() { IsEnabled = false };
+    public ValueStatistics Value8 => Values.Count > 8 ? Values[8] : new ValueStatistics() { IsEnabled = false };
+    public ValueStatistics Value9 => Values.Count > 9 ? Values[9] : new ValueStatistics() { IsEnabled = false };
+    public ValueStatistics Value10 => Values.Count > 10 ? Values[10] : new ValueStatistics() { IsEnabled = false };
 
-    public List<ValueStatistics> Values { get; }
+
+    public List<ValueStatistics> Values { get; } = new();
 }

@@ -1,15 +1,9 @@
 public class StatisticsHost : RenderObject
 {
-    public StatisticsHost()
-    {
-        Drivers = new List<DriverStatistics>();
-        Columns = new List<ValueStatisticsColumn>();
-    }
-    
     public string Header { get; set; }
     public string SubHeader { get; set; }
     public string Description { get; set; }
-    public IList<DriverStatistics> Drivers { get; }
+    public List<DriverStatistics> Drivers { get; } = new();
 
     public ValueStatisticsColumn Column0 =>
         Columns.Count > 0 ? Columns[0] : new ValueStatisticsColumn() { IsEnabled = false };
@@ -35,5 +29,15 @@ public class StatisticsHost : RenderObject
     public ValueStatisticsColumn Column7 =>
         Columns.Count > 7 ? Columns[7] : new ValueStatisticsColumn() { IsEnabled = false };
 
-    public List<ValueStatisticsColumn> Columns { get; }
+    public ValueStatisticsColumn Column8 =>
+        Columns.Count > 8 ? Columns[8] : new ValueStatisticsColumn() { IsEnabled = false };
+
+    public ValueStatisticsColumn Column9 =>
+        Columns.Count > 9 ? Columns[9] : new ValueStatisticsColumn() { IsEnabled = false };
+
+    public ValueStatisticsColumn Column10 =>
+        Columns.Count > 10 ? Columns[10] : new ValueStatisticsColumn() { IsEnabled = false };
+
+
+    public List<ValueStatisticsColumn> Columns { get; } = new();
 }
