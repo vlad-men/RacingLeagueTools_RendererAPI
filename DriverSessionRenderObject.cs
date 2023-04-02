@@ -8,6 +8,7 @@
     public TeamRenderObject Team { get; set; }
     public CarRenderObject Car { get; set; }
     public DriverStatus SeatType { get; set; }
+    public int SeatPosition { get; set; }
     public DriverSessionStatus Status { get; set; }
     public string Time { get; set; }
     public int TimeMs { get; set; }
@@ -42,14 +43,17 @@
     public bool IsBestMomentDriver { get; set; }
     public int PenaltyTimeIngame { get; set; }
     public int PenaltyPosIngame { get; set; }
-    public int PenaltyTimeStewards { get; set; } 
+    public int PenaltyTimeStewards { get; set; }
     public int PenaltyPosStewards { get; set; }
     public int PenaltyTimeTotal { get; set; }
     public int PenaltyPosTotal { get; set; }
+    public int PenaltyPoints { get; set; }
     public string PenaltyTimeStringLeftPart { get; set; }
     public string PenaltyTimeStringRightPart { get; set; }
     public string DriverPointsString { get; set; }
     public string TeamPointsString { get; set; }
+    public float DriverPointsRaw { get; set; }
+    public float TeamPointsRaw { get; set; }
     public SessionRenderObject Session { get; set; }
     public int RaceNumber { get; set; }
     public bool IsHaveRaceNumber { get; set; }

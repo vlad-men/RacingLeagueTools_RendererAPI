@@ -11,5 +11,8 @@ public enum RenderType
     DriverSessionStatistics,
     DriverSeasonStatistics,
     DriverSession,
-    DriverInfo
+    DriverInfo,
+    PenaltySeasonStatistics,
+    PenaltyItem,
+    PenaltyItems
 }

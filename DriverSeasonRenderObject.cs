@@ -3,9 +3,11 @@
     public DriverRenderObject Driver { get; set; }
     public DriverStatus DriverStatus { get; set; }
     public bool IsReserve { get; set; }
+    public int SeatPosition { get; set; }
     public List<DriverEventRenderObject> Events { get; set; }
     public bool IsShow { get; set; }
     public TeamRenderObject Team { get; set; }
+    public CarRenderObject Car { get; set; }
     public List<DriverSessionRenderObject> MajorRaces { get; set; }
     public List<DriverSessionRenderObject> MajorQuals { get; set; }
     public int PositionPrev { get; set; }
@@ -13,6 +15,10 @@
     public string PositionString { get; set; }
     public int PositionJump { get; set; }
     public string Points { get; set; }
+    public float PointsRaw { get; set; }
+    public float PointsToLeaderDiff { get; set; }
+    public float PointsToAboveDiff { get; set; }
+    public float PointsToBeyondDiff { get; set; }
     public int CountP1 { get; set; }
     public int CountP2 { get; set; }
     public int CountP3 { get; set; }
