@@ -7,6 +7,8 @@
     public bool IsChampionshipStatus { get; set; }
     public CompletedStatus CompletedStatus { get; set; }
     public DateTime Date { get; set; }
+    public DateTime DateLocal { get; set; }
+    public DateTime DateGmt { get; set; }
     public TrackRenderObject Track { get; set; }
     public string Description { get; set; }
     public List<SessionRenderObject> Races { get; set; }

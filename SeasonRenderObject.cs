@@ -11,7 +11,7 @@
     public bool IsShowTimesInsteadGapInQual { get; set; }
     public bool IsStandingsShowAllLineups { get; set; }
     public bool IsStandingsShowArchiveDrivers { get; set; }
-    public bool IsStandingsShowReserves { get; set; }   
+    public bool IsStandingsShowReserves { get; set; }
     public int SeasonProgressPercent { get; set; }
     public string SeasonProgressPercentString { get; set; }
     public DriverRenderObject SeasonLeader { get; set; }

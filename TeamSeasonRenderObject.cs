@@ -10,6 +10,10 @@
     public string PositionString { get; set; }
     public int PositionJump { get; set; }
     public string Points { get; set; }
+    public float PointsRaw { get; set; }
+    public float PointsToLeaderDiff { get; set; }
+    public float PointsToAboveDiff { get; set; }
+    public float PointsToBeyondDiff { get; set; }
     public int CountP1 { get; set; }
     public int CountP2 { get; set; }
     public int CountP3 { get; set; }

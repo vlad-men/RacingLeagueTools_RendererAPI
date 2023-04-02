@@ -18,6 +18,8 @@
     public DateTime LiveEndDate { get; set; }
     public DateTime LiveStartDateGmt { get; set; }
     public DateTime LiveEndDateGmt { get; set; }
+    public DateTime LiveStartDateLocal { get; set; }
+    public DateTime LiveEndDateLocal { get; set; }
     public bool IsSingleplayerMode { get; set; }
     public ChampionshipType ChampionshipType { get; set; }
     public WeatherType WeatherType { get; set; }
@@ -35,4 +37,6 @@
     public int SafetyCarCount { get; set; }
     public int VirtualSafetyCarCount { get; set; }
     public List<DriverSessionRenderObject> Drivers { get; set; }
+    public int DriversCount => Drivers?.Count ?? 0;
+    public int TotalPitsCount => Drivers?.Sum(d => d.PitsCount) ?? 0;
 }
