@@ -1,4 +1,4 @@
-public enum LeagueRoles
+public enum LeagueRoleBuiltIn
 {
     [Description("League Head")] LeagueHead = 1,
     [Description("Admin")] Admin = 2,

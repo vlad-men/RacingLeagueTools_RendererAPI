@@ -10,7 +10,7 @@
     public List<byte[]> BadgeImages { get; set; }
     public NationRenderObject Nationality { get; set; }
     public DriverStatus DriverStatus { get; set; }
-    public LeagueRoles LeagueRoles { get; set; }
+    public List<LeagueRoleRenderObject> LeagueRoles { get; set; }
     public int RaceNumber { get; set; }
     public NationRenderObject NationalityIngame { get; set; }
     public GamePlatform GamePlatform { get; set; }

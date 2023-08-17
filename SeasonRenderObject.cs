@@ -4,7 +4,8 @@
     public string FullName { get; set; }
     public CompletedStatus CompletedStatus { get; set; }
     public ChampionshipRenderObject Championship { get; set; }
-    public LeagueCategoryRenderObject LeagueCategory { get; set; }
+    public LeagueCategoryRenderObject MainLeagueCategory { get; set; }
+    public ICollection<LeagueCategoryRenderObject> LeagueCategories { get; set; }
     public LineupsBasedType LineupsBasedType { get; set; }
     public int GridSize { get; set; }
     public bool IsSeparateReservesAtStandings { get; set; }
