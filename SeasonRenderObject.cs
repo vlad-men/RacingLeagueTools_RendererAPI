@@ -3,6 +3,8 @@
     public LeagueRenderObject LeagueInfo { get; set; }
     public string FullName { get; set; }
     public CompletedStatus CompletedStatus { get; set; }
+    public Color Color { get; set; }
+    public Color SecondaryColor { get; set; }
     public ChampionshipRenderObject Championship { get; set; }
     public LeagueCategoryRenderObject MainLeagueCategory { get; set; }
     public ICollection<LeagueCategoryRenderObject> LeagueCategories { get; set; }

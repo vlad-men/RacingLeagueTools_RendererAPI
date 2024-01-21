@@ -6,6 +6,8 @@
     public EventStatus EventStatus { get; set; }
     public bool IsChampionshipStatus { get; set; }
     public CompletedStatus CompletedStatus { get; set; }
+    public Color Color { get; set; }
+    public Color SecondaryColor { get; set; }
     public DateTime Date { get; set; }
     public DateTime DateLocal { get; set; }
     public DateTime DateGmt { get; set; }
