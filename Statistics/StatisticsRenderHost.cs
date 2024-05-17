@@ -4,6 +4,7 @@ public class StatisticsRenderHost : BaseRenderData
     public string Header { get; set; }
     public string SubHeader { get; set; }
     public string Description { get; set; }
+    public string StatisticsTypeString { get; set; } //can be one of SeasonStatisticsType / SessionStatisticsType enum value
     public List<DriverStatisticsRenderData> Drivers { get; } = new();
 
     public ValueStatisticsColumnRenderData Column0 =>
