@@ -1,6 +1,7 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
 public class DriverSeasonRenderData : BaseRenderData
 {
+    public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
     public DriverRenderObject Driver { get; set; }
     public DriverStatus DriverStatus { get; set; }
     public bool IsReserve { get; set; }

@@ -21,7 +21,9 @@ public class SeasonRenderData : NamedRenderData
     public DriverRenderObject SeasonLeader { get; set; }
     public string SeasonLeaderString { get; set; }
     public int SeasonCurrentNumberEvent { get; set; }
+    public int SeasonCurrentNumberEventExcludingNonChampionship { get; set; }
     public int SeasonOverallNumberEvents { get; set; }
+    public int SeasonOverallNumberEventsExcludingNonChampionship { get; set; }
     public int SeatsPerTeam { get; set; }
     public bool IsProFeaturesEnabled { get; set; }
 }
