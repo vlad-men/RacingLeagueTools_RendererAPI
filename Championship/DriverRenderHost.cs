@@ -1,7 +1,7 @@
 namespace RacingLeagueTools.FlexRenderer.Models.RenderObjects;
 public class DriverRenderHost : BaseRenderData
 {
-    public DriverRenderObject Driver { get; set; }
+    public DriverRenderData Driver { get; set; }
     public DriverSeasonRenderData DriverSeason { get; set; }
     public TeamRenderData Team { get; set; }
     public CarRenderData Car { get; set; }

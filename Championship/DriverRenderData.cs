@@ -1,4 +1,4 @@
-public class DriverRenderObject : NamedRenderData
+public class DriverRenderData : NamedRenderData
 {
     public string RealName { get; set; }
     public string InGameName { get; set; }
