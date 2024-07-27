@@ -18,5 +18,6 @@ public class EventRenderData : BaseRenderData
     public ICollection<SessionRenderData> Quals { get; set; }
     public ICollection<SessionRenderData> Practices { get; set; }
     public bool IsFullQual { get; set; }
+    public bool IsHaveSprintSessions { get; set; }
     public string WinnerString { get; set; }
 }
