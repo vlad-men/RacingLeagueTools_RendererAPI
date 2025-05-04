@@ -15,4 +15,7 @@ public class DriverRenderData : NamedRenderData
     public NationRenderData NationalityIngame { get; set; }
     public GamePlatform GamePlatform { get; set; }
     public string Description { get; set; }
+    public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = [];
+    public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
+    public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
 }

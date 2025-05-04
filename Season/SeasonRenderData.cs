@@ -6,6 +6,7 @@ public class SeasonRenderData : NamedRenderData
     public CompletedStatus CompletedStatus { get; set; }
     public Color Color { get; set; }
     public Color SecondaryColor { get; set; }
+    public Color TertiaryColor { get; set; }
     public ChampionshipRenderData Championship { get; set; }
     public LeagueCategoryRenderData MainLeagueCategory { get; set; }
     public ICollection<LeagueCategoryRenderData> LeagueCategories { get; set; }
@@ -26,4 +27,10 @@ public class SeasonRenderData : NamedRenderData
     public int SeasonOverallNumberEventsExcludingNonChampionship { get; set; }
     public int SeatsPerTeam { get; set; }
     public bool IsProFeaturesEnabled { get; set; }
+    public TimeOnly DefaultEventStartTime { get; set; }
+    public bool IsEventDateOnly { get; set; }
+    public bool IsSessionDateOnly { get; set; }
+    public EventFormat EventFormat { get; set; }
+    public MulticlassConfiguration? MulticlassConfiguration { get; set; }
+    public bool IsHaveMulticlassConfiguration => MulticlassConfiguration is not null && MulticlassConfiguration.RacingClasses.Count > 1;
 }

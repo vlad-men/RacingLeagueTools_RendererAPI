@@ -4,6 +4,7 @@ public class LeagueCategoryRenderData : NamedRenderData
     public string ShortName { get; set; }
     public Color Color { get; set; }
     public Color SecondaryColor { get; set; }
+    public Color TertiaryColor { get; set; }
     public int DriversCount { get; set; }
     public int SeasonsCount { get; set; }
 }

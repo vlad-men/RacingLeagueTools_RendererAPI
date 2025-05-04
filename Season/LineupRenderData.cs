@@ -14,4 +14,7 @@ public class LineupRenderData : BaseRenderData
     public SeasonRenderData Season { get; set; }
     public bool IsNextTeam { get; set; }
     public LineupsBasedType LineupsBasedType { get; set; }
+    public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = [];
+    public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
+    public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
 }
