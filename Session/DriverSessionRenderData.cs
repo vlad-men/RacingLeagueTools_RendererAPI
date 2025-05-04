@@ -70,4 +70,8 @@ public class DriverSessionRenderData : BaseRenderData
     public int LeadLaps { get; set; }
     public int LeadDistance { get; set; }
     public int RaceDistancePercentage { get; set; }
+    public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
+    public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = []; //info from season's lineups
+    public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
+    public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
 }

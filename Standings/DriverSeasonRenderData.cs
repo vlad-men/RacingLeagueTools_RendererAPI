@@ -45,4 +45,5 @@ public class DriverSeasonRenderData : BaseRenderData
     public int CountTop3 { get; set; }
     public int CountTop5 { get; set; }
     public int CountTop10 { get; set; }
+    public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
 }
