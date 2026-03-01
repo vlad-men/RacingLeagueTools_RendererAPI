@@ -1,4 +1,5 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class StandingsSeasonRenderData : BaseRenderData
 {
     public ICollection<DriverSeasonRenderData> Drivers { get; set; }
@@ -10,4 +11,7 @@ public class StandingsSeasonRenderData : BaseRenderData
     public ICollection<EventRenderData> Events { get; set; }
     public bool IsPositionJumpForDriversExists { get; set; }
     public bool IsPositionJumpForTeamsExists { get; set; }
+
+    public RacingClassInfo? RacingClass { get; set; }
+    public bool IsHaveRacingClass => RacingClass is not null;
 }

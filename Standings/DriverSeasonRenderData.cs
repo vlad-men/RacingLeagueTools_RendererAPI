@@ -1,7 +1,7 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class DriverSeasonRenderData : BaseRenderData
 {
-    public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
     public DriverRenderObject Driver { get; set; }
     public DriverStatus DriverStatus { get; set; }
     public bool IsReserve { get; set; }
@@ -46,4 +46,17 @@ public class DriverSeasonRenderData : BaseRenderData
     public int CountTop5 { get; set; }
     public int CountTop10 { get; set; }
     public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
+
+    public RacingClassInfo? RacingClass { get; set; }
+    public bool IsHaveRacingClass => RacingClass is not null;
+
+    public DriverSeasonRaceDetails RaceDetails { get; set; } = new();
+    public DriverSeasonQualDetails QualDetails { get; set; } = new();
+    public DriverSeasonParticipationDetails ParticipationDetails { get; set; } = new();
+    public DriverSeasonPenaltiesDetails PenaltiesDetails { get; set; } = new();
+    public DriverSeasonPositionsDetails PositionsDetails { get; set; } = new();
+    public DriverSeasonDiscardingDetails DiscardingDetails { get; set; } = new();
+    public DriverSeasonTeamDetails TeamDetails { get; set; } = new();
+    public DriverSeasonDeepRatingsDetails DeepRatingsDetails { get; set; } = new();
+    public DriverSeasonChampionshipDetails ChampionshipDetails { get; set; } = new();
 }
