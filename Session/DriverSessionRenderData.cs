@@ -1,10 +1,11 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class DriverSessionRenderData : BaseRenderData
 {
     public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
     public int Position { get; set; }
-    public string PositionString { get; set; }
-    public string PositionIncludeStatus { get; set; }
+    public string Pos String { get; set; }
+    public string Pos IncludeStatus { get; set; }
     public int ClassificationPosition { get; set; }
     public DriverRenderObject Driver { get; set; }
     public TeamRenderData Team { get; set; }
@@ -74,4 +75,7 @@ public class DriverSessionRenderData : BaseRenderData
     public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = []; //info from season's lineups
     public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
     public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
+    public RacingClassInfo? RacingClass { get; set; }
+    public bool IsHaveRacingClass => RacingClass is not null;
+
 }
