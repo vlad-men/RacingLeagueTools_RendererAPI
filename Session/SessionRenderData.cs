@@ -1,4 +1,5 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class SessionRenderData : BaseRenderData
 {
     public TrackRenderData Track { get; set; }
@@ -17,6 +18,8 @@ public class SessionRenderData : BaseRenderData
     public PointsValue RaceFastestLapAwardedTeamPoints { get; set; }
     public DriverRenderData DriverDayDriver { get; set; }
     public DriverRenderData BestMomentDriver { get; set; }
+    public DriverRenderData MostLapsLedDriver { get; set; }
+    public int MostLapsLedCount { get; set; }
     public bool IsLiveData { get; set; }
     public UInt64 LiveId { get; set; }
     public DateTime LiveStartDate { get; set; }

@@ -1,6 +1,13 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class EventRenderData : BaseRenderData
 {
+    public EventType EventType { get; set; }
+    public TrackRenderData Track { get; set; }
+    public bool IsTrackDefined { get; set; }
+    public bool IsRandomEvent { get; set; }
+    public bool IsBreak { get; set; }
+
     public int Position { get; set; }
     public string TrackName { get; set; }
     public string TrackCountryName { get; set; }
@@ -12,7 +19,6 @@ public class EventRenderData : BaseRenderData
     public DateTime Date { get; set; }
     public DateTime DateLocal { get; set; }
     public DateTime DateGmt { get; set; }
-    public TrackRenderData Track { get; set; }
     public string Description { get; set; }
     public ICollection<SessionRenderData> Races { get; set; }
     public ICollection<SessionRenderData> Quals { get; set; }

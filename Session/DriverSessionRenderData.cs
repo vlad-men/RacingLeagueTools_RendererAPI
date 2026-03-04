@@ -44,6 +44,7 @@ public class DriverSessionRenderData : BaseRenderData
     public bool IsRaceFastestLap { get; set; }
     public bool IsRaceDriverOfDay { get; set; }
     public bool IsBestMomentDriver { get; set; }
+    public bool IsMostLapsLedDriver { get; set; }
     public int PenaltyTimeIngame { get; set; }
     public int PenaltyPosIngame { get; set; }
     public int PenaltyTimeStewards { get; set; }
