@@ -1,5 +1,6 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
 
+
 public class EventRenderData : BaseRenderData
 {
     public EventType EventType { get; set; }
