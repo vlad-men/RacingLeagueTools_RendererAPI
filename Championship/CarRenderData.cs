@@ -1,6 +1,8 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class CarRenderData : NamedRenderData
 {
+    public string UniqueId { get; set; }
     public CarClassRenderData CarClass { get; set; }
     public VendorRenderData Vendor { get; set; }
     public int Year { get; set; }

@@ -1,9 +1,11 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class TrackRenderData : NamedRenderData
 {
     public string CircuitName { get; set; }
     public string CircuitFullName { get; set; }
     public string LocationName { get; set; }
+    public string UniqueId { get; set; }
     public string Years { get; set; }
     public int Length { get; set; }
     public string CountryName { get; set; }

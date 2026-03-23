@@ -4,6 +4,7 @@ public class TeamRenderData : NamedRenderData
 {
     public string FullName { get; set; }
     public string Abbreviation { get; set; }
+    public string UniqueId { get; set; }
     public string Origin { get; set; }
     public Color Color { get; set; }
     public Color SecondaryColor { get; set; }
