@@ -11,15 +11,30 @@ public class SessionRenderData : BaseRenderData
     public DriverRenderData FastestLapDriver { get; set; }
     public string FastestLapTime { get; set; }
     public int FastestLapTimeMs { get; set; }
-    public TyresType FastestLapTyres { get; set; }
+    public TyreType FastestLapTyres { get; set; }
+    public TyreTypeInfo FastestLapTyresInfo { get; set; }
     public int FastestLapNumLap { get; set; }
+
     public bool IsRaceFastestLapCanBeAwardedPoints { get; set; }
     public PointsValue RaceFastestLapAwardedDriverPoints { get; set; }
     public PointsValue RaceFastestLapAwardedTeamPoints { get; set; }
+
     public DriverRenderData DriverDayDriver { get; set; }
+    public bool IsRaceDriverDayCanBeAwardedPoints { get; set; }
+    public PointsValue RaceDriverDayAwardedDriverPoints { get; set; }
+    public PointsValue RaceDriverDayAwardedTeamPoints { get; set; }
+
     public DriverRenderData BestMomentDriver { get; set; }
+    public bool IsRaceBestMomentCanBeAwardedPoints { get; set; }
+    public PointsValue RaceBestMomentAwardedDriverPoints { get; set; }
+    public PointsValue RaceBestMomentAwardedTeamPoints { get; set; }
+
     public DriverRenderData MostLapsLedDriver { get; set; }
     public int MostLapsLedCount { get; set; }
+    public bool IsRaceMostLapsLedCanBeAwardedPoints { get; set; }
+    public PointsValue RaceMostLapsLedAwardedDriverPoints { get; set; }
+    public PointsValue RaceMostLapsLedAwardedTeamPoints { get; set; }
+
     public bool IsLiveData { get; set; }
     public UInt64 LiveId { get; set; }
     public DateTime LiveStartDate { get; set; }
@@ -44,15 +59,18 @@ public class SessionRenderData : BaseRenderData
     public ICollection<DriverSessionRenderData> Drivers { get; set; }
     public int DriversCount => Drivers?.Count ?? 0;
     public int TotalPitsCount => Drivers?.Sum(d => d.PitsCount) ?? 0;
+
     public string FastestOverallSector1 { get; set; }
     public string FastestOverallSector2 { get; set; }
     public string FastestOverallSector3 { get; set; }
     public string OverallSessionFastestLap { get; set; }
     public int OverallSessionFastestLapMs { get; set; }
     public DriverRenderData OverallSessionFastestLapDriver { get; set; }
+
     public string SessionName { get; set; } //can be user defined
     public RacingClassInfo? RacingClass { get; set; }
     public bool IsHaveRacingClass => RacingClass is not null;
     public bool IsVirtualSession { get; set; }
     public bool IsRealSession => IsVirtualSession is false;
+
 }
