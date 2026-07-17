@@ -1,4 +1,5 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class LineupRenderData : BaseRenderData
 {
     public DriverRenderObject Driver { get; set; }
@@ -6,6 +7,7 @@ public class LineupRenderData : BaseRenderData
     public CarRenderData Car { get; set; }
     public DriverStatus SeatType { get; set; }
     public int SeatPosition { get; set; }
+    public string RaceNumber { get; set; }
     public string Badge { get; set; }
     public int DriverRaces { get; set; }
     public int DriverSkips { get; set; }

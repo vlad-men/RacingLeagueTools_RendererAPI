@@ -59,7 +59,7 @@ public class DriverSessionRenderData : BaseRenderData
     public PointsValue TeamPoints { get; set; }
     public string TeamPointsString => TeamPoints.Value; //deperecated
     public SessionRenderData Session { get; set; }
-    public int RaceNumber { get; set; }
+    public string RaceNumber { get; set; }
     public bool IsHaveRaceNumber { get; set; }
     public int LapsCount { get; set; }
     public int GridPosition { get; set; }

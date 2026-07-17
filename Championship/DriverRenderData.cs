@@ -1,6 +1,8 @@
 public class DriverRenderData : NamedRenderData
 {
-    public string RealName { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string DisplayName { get; set; } //resolved display label (template when enabled, otherwise equals Name)
     public string InGameName { get; set; }
     public string DiscordName { get; set; }
     public string DiscordLink { get; set; }
@@ -11,11 +13,14 @@ public class DriverRenderData : NamedRenderData
     public NationRenderData Nationality { get; set; }
     public DriverStatus DriverStatus { get; set; }
     public ICollection<LeagueRoleRenderData> LeagueRoles { get; set; }
-    public int RaceNumber { get; set; }
+    public string RaceNumber { get; set; }
     public NationRenderData NationalityIngame { get; set; }
     public GamePlatform GamePlatform { get; set; }
     public string Description { get; set; }
     public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = [];
     public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
     public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
+
+
+    public string RealName { get; set; } //deprecated
 }
