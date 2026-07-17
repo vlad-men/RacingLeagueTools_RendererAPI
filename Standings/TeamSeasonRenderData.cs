@@ -1,4 +1,5 @@
 namespace RacingLeagueTools.FlexRenderer.Models;
+
 public class TeamSeasonRenderData : BaseRenderData
 {
     public TeamRenderData Team { get; set; }
@@ -44,4 +45,6 @@ public class TeamSeasonRenderData : BaseRenderData
     public DriverSeasonRenderData Driver2 => Drivers.Count > 2 ? Drivers[2] : new DriverSeasonRenderData();
     public DriverSeasonRenderData Driver3 => Drivers.Count > 3 ? Drivers[3] : new DriverSeasonRenderData();
     public IList<DriverSeasonRenderData> Drivers { get; } = new List<DriverSeasonRenderData>();
+    public TeamSeasonChampionshipDetails ChampionshipDetails { get; set; } = new();
+
 }
