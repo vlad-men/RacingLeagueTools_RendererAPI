@@ -3,6 +3,9 @@ public class DriverRenderData : NamedRenderData
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string DisplayName { get; set; } //resolved display label (template when enabled, otherwise equals Name)
+    public int? BirthYear { get; set; }
+    public Gender Gender { get; set; }
+    public ControllerType ControllerType { get; set; }
     public string InGameName { get; set; }
     public string DiscordName { get; set; }
     public string DiscordLink { get; set; }
