@@ -35,6 +35,10 @@ public class SessionRenderData : BaseRenderData
     public PointsValue RaceMostLapsLedAwardedDriverPoints { get; set; }
     public PointsValue RaceMostLapsLedAwardedTeamPoints { get; set; }
 
+    public DateTime Date { get; set; }
+    public DateTime DateLocal { get; set; }
+    public DateTime DateGmt { get; set; }
+
     public bool IsLiveData { get; set; }
     public UInt64 LiveId { get; set; }
     public DateTime LiveStartDate { get; set; }

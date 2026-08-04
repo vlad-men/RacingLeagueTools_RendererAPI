@@ -10,6 +10,7 @@ public class EventRenderData : BaseRenderData
     public bool IsBreak { get; set; }
 
     public int Position { get; set; }
+    public int ChampionshipPosition { get; set; }
     public string TrackName { get; set; }
     public string TrackCountryName { get; set; }
     public EventStatus EventStatus { get; set; }

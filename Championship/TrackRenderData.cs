@@ -17,4 +17,6 @@ public class TrackRenderData : NamedRenderData
     public int NumberTurns { get; set; }
     public string RaceLapRecordTime { get; set; }
     public string RaceLapRecordDriverName { get; set; }
+    public TrackType Type { get; set; }
+    public TrackLayout Layout { get; set; }
 }

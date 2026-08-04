@@ -3,6 +3,11 @@ public class DriverRenderData : NamedRenderData
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string DisplayName { get; set; } //resolved display label (template when enabled, otherwise equals Name)
+    public IList<DisplayNamePart> DisplayNameParts { get; set; } = []; //template tokens resolved in order
+    public string DisplayNamePart1 { get; set; }
+    public string DisplayNamePart2 { get; set; }
+    public bool IsDisplayNameMultiPart { get; set; }
+
     public int? BirthYear { get; set; }
     public Gender Gender { get; set; }
     public ControllerType ControllerType { get; set; }

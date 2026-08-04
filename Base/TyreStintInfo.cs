@@ -1,4 +1,5 @@
 namespace RacingLeagueTools.FlexRenderer.Models.RenderObjects;
+
 public struct TyreStintInfo
 {
     public TyreType Tyres { get; set; }
@@ -12,4 +13,5 @@ public struct TyreStintInfo
     public int EndLapRaw { get; set; }
     public TyreWear WearAtStart { get; set; }
     public TyreWear WearAtEnd { get; set; }
+    public ICollection<LapInfo> LapDetails { get; set; }
 }

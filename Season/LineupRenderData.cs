@@ -19,4 +19,5 @@ public class LineupRenderData : BaseRenderData
     public ICollection<DriverFeatureInfo> DriverFeatures { get; set; } = [];
     public DriverFeatureInfo? PrimaryDriverFeature => DriverFeatures.FirstOrDefault();
     public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
+    public string LiveryPath { get; set; } //to use, set ForceLiveriesLoading to true (see renderer manual)
 }

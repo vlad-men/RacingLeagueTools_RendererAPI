@@ -7,8 +7,8 @@ public enum ChampionshipType
     F12023,
     F12024,
     F12025,
-    F12026
-        F22020,
+    F12026,
+    F22020,
     F22021,
     F22022,
     F22023,
