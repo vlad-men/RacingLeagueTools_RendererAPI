@@ -3,6 +3,7 @@ namespace RacingLeagueTools.FlexRenderer.Models;
 
 public class EventRenderData : BaseRenderData
 {
+    public string Name { get; set; }
     public EventType EventType { get; set; }
     public TrackRenderData Track { get; set; }
     public bool IsTrackDefined { get; set; }
