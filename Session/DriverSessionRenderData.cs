@@ -91,4 +91,5 @@ public class DriverSessionRenderData : BaseRenderData
     public bool IsHaveDriverFeature => PrimaryDriverFeature is not null;
     public RacingClassInfo? RacingClass { get; set; }
     public bool IsHaveRacingClass => RacingClass is not null;
+    public ICollection<LapPositionInfo> LapPositions { get; set; } //lap 0 is the grid; Position is null when unknown
 }
