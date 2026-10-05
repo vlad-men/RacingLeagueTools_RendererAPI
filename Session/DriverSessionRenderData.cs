@@ -13,7 +13,7 @@ public class DriverSessionRenderData : BaseRenderData
     public int SeatPosition { get; set; }
     public DriverSessionStatus Status { get; set; }
     public string Time { get; set; }
-    public int TimeMs { get; set; }
+    public long TimeMs { get; set; }
     public string IntervalRace { get; set; }
     public string AbsoluteTime { get; set; }
     public int AbsoluteTimeMs { get; set; }

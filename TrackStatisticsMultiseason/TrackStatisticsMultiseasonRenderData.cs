@@ -10,8 +10,8 @@ public class TrackStatisticsMultiseasonRenderData : BaseRenderData
     public int TotalEvents { get; set; }
     public int TotalRaces { get; set; }
     public int TotalQualifications { get; set; }
-    public string FirstVisitDate { get; set; }
-    public string LastVisitDate { get; set; }
+    public DateTime FirstVisitDate { get; set; }
+    public DateTime LastVisitDate { get; set; }
 
     // extended details (always initialized, never null)
     public TrackMultiseasonRaceDetails RaceDetails { get; set; } = new();

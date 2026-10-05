@@ -4,4 +4,5 @@ public class EventsSeasonRenderData : BaseRenderData
 {
     public IList<EventRenderData> Events { get; set; }
     public IList<EventRenderData> EventsIncludingBreaks { get; set; }
+    public EventRenderData NextEvent { get; set; }
 }
