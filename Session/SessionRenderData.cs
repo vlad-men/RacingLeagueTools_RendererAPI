@@ -77,4 +77,13 @@ public class SessionRenderData : BaseRenderData
     public bool IsVirtualSession { get; set; }
     public bool IsRealSession => IsVirtualSession is false;
 
+    public int LeaderLapsCount { get; set; }
+    public int LeadChanges { get; set; }
+    public bool HasLapHistory { get; set; }
+    public bool IsWeatherRecorded { get; set; }
+    public WeatherType WeatherHeadline { get; set; }
+    public string WeatherHeadlineString { get; set; }
+    public ICollection<WeatherPointInfo> WeatherTimeline { get; set; }
+    public ICollection<TrackStatusPeriodInfo> SafetyCarPeriods { get; set; }
+
 }

@@ -27,4 +27,18 @@ public class LapInfo
     public int DeltaToPreviousLapMs { get; set; }
     public string DeltaToPersonalBest { get; set; } = string.Empty;
     public int DeltaToPersonalBestMs { get; set; }
+    public int PositionAfterLap { get; set; }
+    public bool IsPositionEstimated { get; set; }
+    public int PositionChange { get; set; }
+    public string GapToLeader { get; set; } = string.Empty;
+    public int GapToLeaderMs { get; set; }
+    public string GapToAhead { get; set; } = string.Empty;
+    public int GapToAheadMs { get; set; }
+    public int TyreWear { get; set; }
+    public bool IsTyreWearRecorded { get; set; }
+    public bool IsPitEntryLap { get; set; }
+    public bool IsPitExitLap { get; set; }
+    public string TrackStatus { get; set; } = string.Empty;
+    public WeatherType Weather { get; set; }
+    public bool IsWeatherRecorded { get; set; }
 }
